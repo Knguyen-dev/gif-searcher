@@ -1,0 +1,132 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+button {
+    cursor: pointer;
+    transition: var(--transition);
+    border-style: solid;
+    font-weight: bold;
+    font-family: inherit;
+}
+
+fieldset {
+    border: none;
+}
+
+.content-hidden {
+    display: none;
+}
+
+:root {
+    --bg-clr-light-blue: #38bdf8;
+    --bg-clr-blue: #3b82f6;
+    --bg-clr-dark-sky: #0c4a6e;
+    --bg-clr-light-lime: #bef264;
+    --bg-clr-light-sky: #38bdf8;
+    --bg-clr-red: #b91c1c;
+    --font-clr-black: black;
+    --font-clr-white: white;
+    --font-clr-dark-blue: #1e3a8a;
+    --font-clr-light-sky: #7dd3fc;
+    --font-1: "Roboto", sans-serif;
+    --font-2: "Open Sans", sans-serif;
+    --transition: all 0.25s ease-in-out;
+    --border-radius: 4px;
+    --letter-spacing: 4px;
+}
+
+body {
+    font-family: var(--font-1), var(--font-2);
+}
+
+/* Styling for project container */
+.project-container {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+
+.project-header,
+.project-footer {
+    color: var(--font-clr-black);
+    background-color: var(--bg-clr-blue);
+    padding: 12px;
+    text-align: center;
+}
+
+/* Header styles */
+.search-form-container {
+    margin-top: 12px;
+}
+.search-gif-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 12px;
+}
+#input-search-el {
+    border-radius: var(--border-radius);
+    border-style: solid;
+    border-color: var(--bg-clr-dark-sky);
+    padding: 4px;
+}
+#search-gif-btn {
+    padding: 10px 24px;
+}
+#search-gif-btn:hover {
+    background-color: black;
+    color: white;
+}
+
+/* Main-content stylings */
+
+.project-main-content {
+    background-color: var(--bg-clr-light-sky);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12px;
+}
+
+.search-output {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 16px;
+}
+
+#output-img-container {
+    background-color: white;
+}
+
+#search-output-img-el {
+    height: 300px;
+}
+
+/* Footer stylings */
+.project-footer-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 12px;
+}
+
+.footer-icon-image {
+    height: 40px;
+}

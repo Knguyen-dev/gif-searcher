@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Gif searcher</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div class="content">
+            <div class="project-container">
+                <!-- Have title on top, and then search-bar with 'search' button in the header -->
+                <header class="project-header">
+                    <h1 id="page-title-el">Gif Searcher!</h1>
+                    <h4 id="page-desc">
+                        Search for a gif and we'll try to find a gif for you!
+                    </h4>
+
+                    <div class="search-form-container">
+                        <form class="search-gif-section">
+                            <fieldset>
+                                <label for="input-search-el">
+                                    Enter a search query:
+                                </label>
+                                <input
+                                    type="text"
+                                    id="input-search-el"
+                                    name="gif-search-bar"
+                                />
+                            </fieldset>
+                            <button type="submit" id="search-gif-btn">
+                                Search
+                            </button>
+                        </form>
+                    </div>
+                </header>
+
+                <!-- Main content section will basically just be the image and probably some text to say whether an image was found or not -->
+                <section class="project-main-content">
+                    <section class="search-output">
+                        <h2 id="search-output-message-el">
+                            Try searching for something!
+                        </h2>
+
+                        <div id="output-img-container">
+                            <img
+                                id="search-output-img-el"
+                                src="./assets/search_not_found.jpg"
+                            />
+                        </div>
+                    </section>
+                </section>
+
+                <footer class="project-footer">
+                    <nav class="project-footer-nav">
+                        <p id="footer-info-el">
+                            Knguyen
+                            <span id="date-el">{some current year}</span>
+                        </p>
+                        <a class="footer-icon-link" href="#"
+                            ><img
+                                class="footer-icon-image"
+                                src="./assets/github-mark.svg"
+                        /></a>
+                    </nav>
+                </footer>
+            </div>
+        </div>
+    </body>
+</html>
