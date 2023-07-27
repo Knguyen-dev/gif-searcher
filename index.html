@@ -17,7 +17,7 @@
                     </h4>
 
                     <div class="search-form-container">
-                        <form class="search-gif-section">
+                        <form id="search-gif-form">
                             <fieldset>
                                 <label for="input-search-el">
                                     Enter a search query:
@@ -26,6 +26,7 @@
                                     type="text"
                                     id="input-search-el"
                                     name="gif-search-bar"
+                                    required
                                 />
                             </fieldset>
                             <button type="submit" id="search-gif-btn">
@@ -38,15 +39,10 @@
                 <!-- Main content section will basically just be the image and probably some text to say whether an image was found or not -->
                 <section class="project-main-content">
                     <section class="search-output">
-                        <h2 id="search-output-message-el">
-                            Try searching for something!
-                        </h2>
+                        <h2 id="search-output-message-el"></h2>
 
                         <div id="output-img-container">
-                            <img
-                                id="search-output-img-el"
-                                src="./assets/search_not_found.jpg"
-                            />
+                            <img id="search-output-img" src="" />
                         </div>
                     </section>
                 </section>
@@ -55,7 +51,7 @@
                     <nav class="project-footer-nav">
                         <p id="footer-info-el">
                             Knguyen
-                            <span id="date-el">{some current year}</span>
+                            <span id="date-el"></span>
                         </p>
                         <a class="footer-icon-link" href="#"
                             ><img
@@ -66,5 +62,6 @@
                 </footer>
             </div>
         </div>
+        <script src="app.js"></script>
     </body>
 </html>

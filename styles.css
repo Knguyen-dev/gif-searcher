@@ -73,7 +73,7 @@ body {
 .search-form-container {
     margin-top: 12px;
 }
-.search-gif-section {
+#search-gif-form {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -108,14 +108,17 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     row-gap: 16px;
 }
 
 #output-img-container {
     background-color: white;
+    border-radius: var(--border-radius);
+    overflow: hidden;
 }
 
-#search-output-img-el {
+#search-output-img {
     height: 300px;
 }
 
